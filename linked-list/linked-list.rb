@@ -1,0 +1,3 @@
+class MyLinkedList
+
+end
