@@ -1,7 +1,5 @@
-# require 'pry'
-
 class MyQueue
-	attr_reader :size
+	attr_reader :size, :data
 	def initialize(size)
 		@size = size
 		@data = Array.new(size)
@@ -29,6 +27,14 @@ class MyQueue
 			dequeued
 		end
 	end
+
+  def head
+    @data[@head]
+  end
+
+  def tail
+    @data[@tail]
+  end
 
 	private
 
