@@ -18,6 +18,6 @@ class MyHashTable
   end
 
   def hash(key)
-    (key.to_sym.object_id % 1000) - (key.to_sym.object_id / 10000)
+    ((key.to_sym.object_id % 1000) - (key.to_sym.object_id / 10000)).abs
   end
 end
